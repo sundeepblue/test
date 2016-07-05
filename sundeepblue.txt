@@ -1,0 +1,81 @@
+
+Question 1:
+
+1
+cd /Users/sundeepblue/nyc_datascience_bootcamp/sun_datascience_repo/bootcamp006_homework
+mkdir test
+git init
+
+2
+git status
+touch a.txt
+echo "Git is good" > a.txt
+git add a.txt
+
+3
+git status
+
+4
+git commit -m "add one txt file"
+git status
+
+Question 2:
+
+1
+mkdir subtest
+cd subtest
+touch b.txt
+echo "Git is really good" > b.txt
+
+2
+cd ..
+touch a1.txt a2.txt
+git add --all
+
+3
+git status
+git commit -m "add additional txt files"
+
+4
+git log --graph --decorate
+
+
+Question 3:
+
+1
+New repository named "test" was created via github website. Here is the link: https://github.com/sundeepblue/test.git
+git remote add origin https://github.com/sundeepblue/test.git
+git remote -v
+
+2
+echo "Github is awesome" >> a.txt
+git add a.txt
+git status
+
+3
+git log
+git diff HEAD
+
+4
+git commit -m "add a new line to file a.txt"
+git pull origin master
+git push origin master (see link here for comits: https://github.com/sundeepblue/test/commits/master)
+
+
+Question 4:
+
+1
+I have read the stackoverflow link.
+
+2
+echo "think big!" >> a1.txt
+git status
+git checkout -- a1.txt
+git status
+
+3
+echo "do small!" >> a1.txt
+git add --all
+git commit -m "add a new line to file a1.txt"
+git reset --hard HEAD~1
+
